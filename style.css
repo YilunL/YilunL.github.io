@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn {
+  color: #05A8AA;
+  border: 1px solid #05A8AA;
+  border-radius: 4px;
+  font-family: 'Futura', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0px;
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
