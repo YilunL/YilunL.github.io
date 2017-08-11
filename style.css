@@ -1,9 +1,9 @@
 .enter_page_photo {
   background-image: url("https://7dd2b1ae-a-946e4891-s-sites.googlegroups.com/a/sas.upenn.edu/yilunli/home/15310609_1813918152163215_1555391207_n.jpg?attachauth=ANoY7crQC3Yb52_sIBthNSBVTc4lktVsjEcv13YOYzyfQGcZIJFMhXHZYcStV3XI1w9JGGBobIGo6CNbeLyAtGGCe6QudUSCURF1TpltqRJ1zIvGD6SPNTaNQxgsK5Y7lKXvyMakukLwO-otC96samGPdKGaJCgc9c5tjklnuFDKgdQBxHl7QV5arOnuzDlcuozfwvBkTlrfx6NTCSKT3bBuoPhqpPlGCLJlrMFSTQrtOkmIVlSql4m-O01PB6Xx-yj56pNPZ1HX&attredirects=0");
   background-size: cover;
-  background-position: center;
-  height: 400px;
-  width: 50%;
+  background-position: center center;
+  height: 500px;
+  width: 40%;
 }
 
 
