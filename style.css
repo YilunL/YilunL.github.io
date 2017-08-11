@@ -10,15 +10,18 @@ text-align: center;
     width: 33%;
 }
 
-
-
+.toolbar{
+    position: fixed;
+    
+    
+}
 
 
 .btn {
   border: 1px solid #05A8AA;
   border-radius: 4px;
   color: #05A8AA;
-  display: inline-block;
+  float: center;
   font-family: 'Futura', sans-serif;
   font-size: 18px;
   font-weight: 700;
