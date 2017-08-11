@@ -4,15 +4,14 @@
     font-family: 'Raleway', sans-serif; 
     height: 1200px;
     top: -100px;
-    text-align: center;   
+    text-align: center center;   
 }
 
 .cover-content {
   box-sizing: border-box;
   margin: 0 auto;
   position: relative;
-  text-align: center center;
-  top: 540px;
+  text-align: center;
   width: 70%;
 }
 
