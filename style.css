@@ -1,7 +1,8 @@
-.header {
-font-family: 'Futura', sans-serif;  
-font-size: 32px;
-text-align: center;
+.entry_page {
+    background: "philly.jpg";
+    font-family: 'Raleway', sans-serif;  
+    font-size: 32px;
+    text-align: center;
 }
 
 .about_me_img {
@@ -32,4 +33,4 @@ text-align: center;
   justify-content: center;
 }
     
-}
+
