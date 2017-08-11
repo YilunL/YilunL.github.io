@@ -1,8 +1,9 @@
 #entry_page_main {
     background: url("https://pixabay.com/get/ee35b90a28e91c66d65b4004ee48428be272e2d71db8104192f4/philadelphia-70850.jpg") no-repeat center center;
     background-size: cover;
-    font-family: 'Raleway', sans-serif;  
-    height: 1080px;
+    font-family: 'Raleway', sans-serif; 
+    height: 1200px;
+    top: -100px;
     text-align: center;   
 }
 
