@@ -1,11 +1,12 @@
 #entry_page_main {
-    background: url("https://pixabay.com/get/ee35b90a28e91c66d65b4004ee48428be272e2d71db8104192f4/philadelphia-70850.jpg") no-repeat center center;
+    background: url("https://pixabay.com/get/e137b20a2ee91c66d65b4004ee48428be272e2d71db8134491f1/philadelphia-82356.jpg") no-repeat center center;
     background-size: cover;
     font-family: 'Raleway', sans-serif; 
     height: 1200px;
     position: relative;
     top: -100px;
-    text-align: center;   
+    text-align: center;
+    width: 105%;
 }
 
 .cover-content {
@@ -20,7 +21,7 @@ h1 {
   color: #FFF;
   font-family: 'Raleway', sans-serif;
   font-size: 72px;
-  line-height: 500px;
+  line-height: 50%;
   padding: 20px 10px;
   text-align: center;
 }
