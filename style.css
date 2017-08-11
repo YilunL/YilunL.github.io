@@ -1,5 +1,6 @@
-.entry_page_main {
+#entry_page_main {
     background: url("https://pixabay.com/get/ed3cb2072afd1c22d9584518a33219c8b66ae3d019b315499cf8c17b/philadelphia-493829_1920.jpg") no-repeat center center;
+    background-size: cover;
     font-family: 'Raleway', sans-serif;  
     font-size: 32px;
     text-align: center;
