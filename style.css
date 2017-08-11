@@ -41,6 +41,7 @@ h1 {
   border: 1px solid #05A8AA;
   border-radius: 4px;
   color: #05A8AA;
+  display: inline-block;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -48,8 +49,6 @@ h1 {
   padding: 20px;
   text-decoration: none;
   text-transform: uppercase;
-  display: flex;
-  justify-content: center;
 }
     
 
