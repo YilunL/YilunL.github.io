@@ -1,5 +1,5 @@
 .entry_page {
-    background: "philly.jpg";
+    background-image: urn("philly.jpg") no-repeat center center;
     font-family: 'Raleway', sans-serif;  
     font-size: 32px;
     text-align: center;
