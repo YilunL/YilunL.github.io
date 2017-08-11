@@ -28,5 +28,8 @@ text-align: center;
   padding: 20px;
   text-decoration: none;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
     
 }
