@@ -4,7 +4,7 @@ font-size: 32px;
 text-align: center;
 }
 
-img {
+.about_me_img {
     display: block;
     margin: auto;
     width: 33%;
