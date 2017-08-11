@@ -15,9 +15,10 @@ text-align: center;
 
 
 .btn {
-  color: #05A8AA;
   border: 1px solid #05A8AA;
   border-radius: 4px;
+  color: #05A8AA;
+  display: inline-block;
   font-family: 'Futura', sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -25,5 +26,5 @@ text-align: center;
   padding: 20px;
   text-decoration: none;
   text-transform: uppercase;
-  margin: auto;
+    
 }
