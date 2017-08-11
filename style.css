@@ -10,7 +10,7 @@
   box-sizing: border-box;
   margin: 0 auto;
   position: relative;
-  text-align: center;
+  text-align: center center;
   top: 280px;
   width: 70%;
 }
