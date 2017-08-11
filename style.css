@@ -3,6 +3,7 @@
     background-size: cover;
     font-family: 'Raleway', sans-serif; 
     height: 1200px;
+    position: relative;
     top: -100px;
     text-align: center center;   
 }
