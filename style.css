@@ -72,6 +72,17 @@ h1 {
     overflow:auto;
 }
 
+.sidebar_block{
+    width:100%;
+    display:block;
+    padding:8px 16px;
+    text-align:left;
+    border:none;
+    outline:none;
+    white-space:normal;
+    float:none;       
+}
+
 
 
 
