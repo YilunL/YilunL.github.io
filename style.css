@@ -4,6 +4,7 @@
     background-size: cover;
     background-position: 50%, 60%;
     font-family: 'Raleway', sans-serif; 
+    
     height: 1080px;
     padding: 0px;
     position: relative;
@@ -20,13 +21,15 @@
 }
 
 h1 {
-  color: #FFBB00;
+  color: #FFF;
   font-family: 'Raleway', sans-serif;
   font-size: 108px;
   font-weight: 900;
+  letter-spacing:1px;
   padding: 300px 10px 100px 10px;
   position: relative;
   text-align: center;
+  text-shadow: 1px 0 #FFF;
 }
 
 .about_me_img {
@@ -43,9 +46,9 @@ h1 {
 
 
 .btn {
-  border: 4px solid #FFBB00;
+  border: 6px solid #FFF;
   border-radius: 4px;
-  color: #FFBB00;
+  color: #FFF;
   display: inline-block;
   font-family: 'Raleway', sans-serif;
   font-size: 24px;
