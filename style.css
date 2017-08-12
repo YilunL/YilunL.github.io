@@ -2,18 +2,16 @@
 /*                                main page crap                             */
 /*****************************************************************************/
 #entry_page_main {
-    background: url("love_smaller.jpg") no-repeat;
+/*    background: url("love_smaller.jpg") no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: 50%, 100%;
+    background-position: 50%, 100%; */
     font-family: 'Raleway', sans-serif; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     padding: 0px;
     position: relative;
     text-align: center;
     width: 100%;
+    
 }
 
 .cover-content {
@@ -125,7 +123,13 @@ h1 {
 
 
 
-
+html{
+  background: url("love_samller.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 
 
