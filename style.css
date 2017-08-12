@@ -3,7 +3,7 @@
     background-size: cover;
     font-family: 'Raleway', sans-serif; 
     height: 1200px;
-    line-height: 1200px;
+    left: -100px;
     position: relative;
     top: -100px;
     text-align: center;
@@ -11,19 +11,17 @@
 }
 
 .cover-content {
-  box-sizing: border-box;
-  
-  margin: 0 auto;
+  box-sizing: border-box; 
+  margin: auto;
   position: relative;
-  text-align: center;
-  
+  text-align: center; 
   width: 70%;
 }
 
 h1 {
   color: #FFF;
   font-family: 'Raleway', sans-serif;
-  font-size: 96px;
+  font-size: 108px;
   padding: 20px 10px;
   text-align: center;
 }
