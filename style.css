@@ -1,3 +1,6 @@
+/*****************************************************************************/
+/*                                main page crap                             */
+/*****************************************************************************/
 #entry_page_main {
     background: url("love.jpg") no-repeat;
     background-attachment: fixed;
@@ -36,18 +39,6 @@ h1 {
     1px 1px 0 #375E97;
 }
 
-.about_me_img {
-    display: block;
-    margin: auto;
-    width: 33%;
-}
-
-.toolbar{
-    position: fixed;
-    
-    
-}
-
 .main_btn {
   border: 6px solid #375E97;
   border-radius: 4px;
@@ -69,6 +60,9 @@ h1 {
   margin: auto;
 }
 
+/*********************************************************************************/
+/*                                  114 page                                     */
+/*********************************************************************************/
 .btn_114{
   border: 2px solid #3F681C;
   border-radius: 4px;
@@ -84,7 +78,35 @@ h1 {
   width: 50%
   margin: auto;
 }
+ 
+/*********************************************************************************/
+/*                             about me page                                     */
+/*********************************************************************************/
+.about_me_img {
+    display: block;
+    margin: auto;
+    width: 33%;
+}
+
+.toolbar{
+    position: fixed;
     
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 *{
   margin: 0;
   padding: 0;
