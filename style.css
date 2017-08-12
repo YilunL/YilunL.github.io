@@ -5,9 +5,9 @@
     background: url("love_smaller.jpg") no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: 50%, 60%;
+    background-position: 50%, 70%;
     font-family: 'Raleway', sans-serif; 
-    height: 1080px;
+    max-height: 1080px;
     padding: 0px;
     position: relative;
     text-align: center;
