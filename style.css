@@ -7,7 +7,9 @@
     background-size: cover;
     background-position: 50%, 100%;
     font-family: 'Raleway', sans-serif; 
-    min-height: 900px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     padding: 0px;
     position: relative;
     text-align: center;
