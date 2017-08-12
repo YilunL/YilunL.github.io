@@ -1,7 +1,7 @@
 #entry_page_main {
-    background: url("love.jpg") no-repeat center bottom;
+    background: url("love.jpg") no-repeat center center;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
     font-family: 'Raleway', sans-serif; 
     height: 1080px;
     padding: 0px;
