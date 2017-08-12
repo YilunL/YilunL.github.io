@@ -83,46 +83,6 @@ h1 {
 }
 
 
-
-
-
-
-/*********************************************************************************/
-/*                                  114 page                                     */
-/*********************************************************************************/
-.btn_114{
-  border: 2px solid #3F681C;
-  border-radius: 4px;
-  color: #3F681C;
-  display: inline-block;
-  font-family: 'Raleway', sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  margin: 10px 0px;
-  padding: 24px;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 50%
-  margin: auto;
-}
- 
-/*********************************************************************************/
-/*                             about me page                                     */
-/*********************************************************************************/
-.about_me_img {
-    display: block;
-    margin: auto;
-    width: 33%;
-}
-
-.toolbar{
-    position: fixed;
-    
-    
-}
-
-
-
 html{
   background: url(love_smaller.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -130,14 +90,6 @@ html{
   -o-background-size: cover;
   background-size: cover;
 }
-
-
-
-
-
-
-
-
 
 
 *{
