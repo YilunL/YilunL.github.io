@@ -22,6 +22,7 @@ h1 {
   color: #92AAC7;
   font-family: 'Raleway', sans-serif;
   font-size: 108px;
+  font-weight: 900;
   padding: 300px 10px 100px 10px;
   position: relative;
   text-align: center;
@@ -47,7 +48,7 @@ h1 {
   display: inline-block;
   font-family: 'Raleway', sans-serif;
   font-size: 24px;
-  font-weight: 10000;
+  font-weight: 900;
   margin: 10px 0px;
   padding: 24px;
   text-decoration: none;
