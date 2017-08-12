@@ -13,7 +13,7 @@
   box-sizing: border-box;
   margin: 0 auto;
   position: relative;
-  text-align: center center;
+  text-align: center;
   width: 70%;
 }
 
@@ -51,6 +51,8 @@ h1 {
   padding: 20px;
   text-decoration: none;
   text-transform: uppercase;
+  width: 50%
+  margin: auto;
 }
     
 
