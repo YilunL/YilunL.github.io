@@ -1,11 +1,10 @@
 #entry_page_main {
     background: url("tampons_penn.jpg") no-repeat center center;
     background-attachment: fixed;
-    background-position: center; 
+    background-position: center center; 
     background-size: cover;
     font-family: 'Raleway', sans-serif; 
     height: 1500px;
-    left: -10px;
     position: relative;
     top: -100px;
     text-align: center;
@@ -21,7 +20,7 @@
 }
 
 h1 {
-  color: #FFF;
+  color: #F2C057;
   font-family: 'Raleway', sans-serif;
   font-size: 108px;
   padding: 500px 10px;
