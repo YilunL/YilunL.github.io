@@ -42,13 +42,13 @@ h1 {
 
 
 .btn {
-  border: 1px solid #05A8AA;
+  border: 2px solid #4C3F54;
   border-radius: 4px;
-  color: #05A8AA;
+  color: #4C3F54;
   display: inline-block;
   font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 1000;
   margin: 10px 0px;
   padding: 20px;
   text-decoration: none;
