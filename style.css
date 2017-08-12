@@ -7,8 +7,7 @@
     background-size: cover;
     background-position: 50%, 60%;
     font-family: 'Raleway', sans-serif; 
-    max-height: 1080px;
-    min-height: 720px;
+    height: 1080px;
     padding: 0px;
     position: relative;
     text-align: center;
@@ -29,7 +28,7 @@ h1 {
   font-size: 108px;
   font-weight: 900;
   letter-spacing:1px;
-  padding: 200px 10px 50px 10px;
+  padding: 100px 10px 50px 10px;
   position: relative;
   text-align: center;
   text-shadow:
