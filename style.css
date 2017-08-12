@@ -2,7 +2,7 @@
 /*                                main page crap                             */
 /*****************************************************************************/
 #entry_page_main {
-    background: url("love.jpg") no-repeat;
+    background: url("love_smaller.jpg") no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: 50%, 60%;
