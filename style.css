@@ -29,7 +29,11 @@ h1 {
   padding: 300px 10px 100px 10px;
   position: relative;
   text-align: center;
-  text-shadow: 1px 0 #FFF;
+  text-shadow: text-shadow:
+    -1px -1px 0 #375E97,
+    1px -1px 0 #375E97,
+    -1px 1px 0 #375E97,
+    1px 1px 0 #375E97;
 }
 
 .about_me_img {
