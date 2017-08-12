@@ -7,7 +7,7 @@
     background-size: cover;
     background-position: 50%, 20%;
     font-family: 'Raleway', sans-serif; 
-    max-height: 1080px;
+    min-height: 900px;
     padding: 0px;
     position: relative;
     text-align: center;
