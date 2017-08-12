@@ -61,6 +61,11 @@ h1 {
   padding: 24px;
   text-decoration: none;
   text-transform: uppercase;
+  text-shadow:
+    -1px -1px 0 #FFBB00,
+    1px -1px 0 #FFBB00,
+    -1px 1px 0 #FFBB00,
+    1px 1px 0 #FFBB00;   
   width: 50%
   margin: auto;
 }
