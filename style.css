@@ -4,13 +4,11 @@
     background-position: center center; 
     background-size: cover;
     font-family: 'Raleway', sans-serif; 
-    height: 150%;
-    left: -8px;
+    height: 200%;
     padding: 0px 10px;
     position: relative;
-    top: -10px;
     text-align: center;
-    width: 105%;
+    width: 115%;
 }
 
 .cover-content {
