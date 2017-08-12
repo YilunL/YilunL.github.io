@@ -117,8 +117,24 @@ body {
   padding: 0 1.5rem;
 }
 .cover .btn-lg {
-  padding: .75rem 1.25rem;
-  font-weight: bold;
+  border: 6px solid #375E97;
+  border-radius: 4px;
+  color: #FFF;
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  margin: 10px 0px;
+  padding: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow:
+    -1px -1px 0 #375E97,
+    1px -1px 0 #375E97,
+    -1px 1px 0 #375E97,
+    1px 1px 0 #375E97;   
+  width: 50%
+  margin: auto;
 }
 
 
