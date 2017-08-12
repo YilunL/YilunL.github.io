@@ -1,7 +1,6 @@
 #entry_page_main {
     background: url("tampons_penn.jpg") no-repeat center center;
     background-attachment: fixed;
-    background-position: center center; 
     background-size: cover;
     font-family: 'Raleway', sans-serif; 
     height: 1080px;
@@ -57,4 +56,6 @@ h1 {
   margin: auto;
 }
     
-
+html, body{
+margin:0px;
+}
