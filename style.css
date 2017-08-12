@@ -20,7 +20,7 @@
 }
 
 h1 {
-  color: #92AAC7;
+  color: #31A98B;
   font-family: 'Raleway', sans-serif;
   font-size: 108px;
   font-weight: 900;
@@ -43,9 +43,9 @@ h1 {
 
 
 .btn {
-  border: 4px solid #92AAC7;
+  border: 4px solid #31A98B;
   border-radius: 4px;
-  color: #92AAC7;
+  color: #31A98B;
   display: inline-block;
   font-family: 'Raleway', sans-serif;
   font-size: 24px;
