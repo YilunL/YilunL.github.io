@@ -5,6 +5,11 @@
     width: 33%;
 }
 
+#static-content {
+    display: block;
+}
+
+
 .row .well{
     display: block;
 }
