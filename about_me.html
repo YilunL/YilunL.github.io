@@ -27,23 +27,22 @@
 <body>
    <!--                       Creating a sidebar                           --> 
 
-<div class="w3-sidebar w3-light-grey w3-card-4 w3-animate-left" style="width:200px" id="mySidebar">
-  <div class="w3-bar w3-dark-grey">
+<div class="w3-sidebar w3-card-4 w3-animate-left" style="width:200px" id="mySidebar">
+  <div class="w3-bar">
   <span class="w3-bar-item w3-padding-16">Content</span>
   <button onclick="w3_close()" class="w3-bar-item w3-button w3-right w3-padding-16" title="close Sidebar">×</button>
   </div>
   <div class="w3-bar-block">
-  <a class="w3-bar-item w3-button w3-green" href="javascript:void(0)">Home</a>
-  <a class="w3-bar-item w3-button" href="javascript:void(0)">About</a>
-  <a class="w3-bar-item w3-button" href="javascript:void(0)">Contact</a>
+  <a class="w3-bar-item w3-button" href="javascript:void(0)">About Me</a>
+
   <div class="w3-dropdown-hover">
-    <a class="w3-button" href="javascript:void(0)" onclick="myAccFunc()">Accordion <i class="fa fa-caret-down"></i></a>
-    <div id="demoAcc" class="w3-hide">
+    <a class="w3-button" href="javascript:void(0)" onclick="myAccFunc('Math 114')">Math 114<i class="fa fa-caret-down"></i></a>
+    <div id="Math 114" class="w3-hide">
         <a href="#" class="w3-bar-item w3-button">Link</a>
         <a href="#" class="w3-bar-item w3-button">Link</a>
     </div>
   </div>
-  <a class="w3-bar-item w3-button" href="javascript:void(0)">Support</a>
+  <a class="w3-bar-item w3-button" href="javascript:void(0)">Contact</a>
   </div>
 </div>
 
@@ -96,7 +95,7 @@ function w3_close() {
   document.getElementById("openNav").style.display = "inline-block";
 }
     
-function myFunction(id) {
+function myAccFunc(id) {
     var x = document.getElementById(id);
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
