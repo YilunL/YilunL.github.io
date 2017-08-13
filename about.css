@@ -42,6 +42,9 @@ ul {
 }
 
 
+.main{
+    z-index: 999
+}
 
 h1{
     color: #3A5199;

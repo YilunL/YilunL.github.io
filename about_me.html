@@ -26,21 +26,44 @@
     
 <body>
    <!--                       Creating a sidebar                           --> 
-    
-   <div class="w3-sidebar w3-bar-block" style="width:20%">
-      <a href="about_me.html" class="w3-bar-item w3-button">About Me</a>
-      <button class="w3-button w3-block w3-left-align" onclick="myAccFunc()">Math 114</button>
+  <div class="w3-sidebar w3-bar-block w3-collapse w3-card-2" style="width:200px;" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-hide-large"
+  onclick="w3_close()">Close &times;</button>
+  <a href="about_me.html" class="w3-bar-item w3-button">About Me</a>
+  <button class="w3-button w3-block w3-left-align" onclick="myAccFunc()">Math 114</button>
       <div id="demoAcc" class="w3-bar-block w3-hide w3-white w3-card-4">
           <a href="math_114_fall_2017.html" class="w3-bar-item w3-button">Fall 2017</a>
           <a href="math_114_spring_2017.html" class="w3-bar-item w3-button">Spring 2017</a>
-           
-      </div>
-      <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
-   </div>            
-        
+      </div> 
+  <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+  
+</div>
+
+<div class="w3-main" style="margin-left:200px">
+
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1>My Page</h1>
+  </div>
+  </div>
+</div>
+
 <script>
-    function myAccFunc() {
-        var x = document.getElementById("demoAcc");
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+} 
+    
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
         if (x.className.indexOf("w3-show") == -1) {
             x.className += " w3-show";
             x.previousElementSibling.className += " w3-blue";
@@ -50,7 +73,9 @@
             x.previousElementSibling.className.replace(" w3-blue", "");
         }
     }
-    </script> 
+    
+</script>     
+
         
        
         
