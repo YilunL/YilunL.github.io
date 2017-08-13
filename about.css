@@ -36,9 +36,11 @@ ul {
 
 #static-content {
     font-family: 'Raleway', sans-serif;
-    text-align: center;
 }
 
+h1 h2{
+    text-align: center;
+}
 
 
 
