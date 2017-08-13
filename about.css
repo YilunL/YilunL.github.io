@@ -9,7 +9,7 @@
 
 ul {
     list-style-type: none;
-	padding: 0;
+    padding: 0;
 }
 
 #sidebar-menu .main-menu a {
@@ -56,11 +56,14 @@ h2{
     color: #3A5199;
 }
 
-h3{
-    color: #2F2E33;
+h4{
+    color: #BBC3C6;
 }
 
 html body{
     background-color: #FFFFFF;
 }
-    
+
+.courses_list {
+    padding: 0;
+}
