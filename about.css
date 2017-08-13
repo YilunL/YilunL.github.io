@@ -60,8 +60,11 @@ h1{
     color: #962715;
 }
 
-h2{
+h2 #College{
     color: #3A5199;
+}
+h2 #HS{
+    color: #CF3721;
 }
 
 .intro{
