@@ -7,7 +7,7 @@
     width: 50%;
 }
 
-ul {
+.ul_sidebar {
     list-style-type: none;
     padding: 0;
 }
@@ -65,7 +65,8 @@ html body{
     color: #16253D
 }
 
-
+.courses_list{
+}
 
 
 
