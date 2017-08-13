@@ -1,77 +1,156 @@
-<html>
-    
-<head>
-    <title> About Me </title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      
     <link href="/about.css" type="text/css" rel="stylesheet">
-    <link href="/w3.css" type="text/css" rel="stylesheet">
-    <link href="/style.css" type="text/css" rel="stylesheet">
-
-</head>
+    <script src="myscripts.js"></script> 
+  </head>
     
-<body>
-   <!--                       Creating a sidebar                           --> 
     
-   <div class="w3-sidebar w3-bar-block" style="width:25%">
-      <a href="about_me.html" class="w3-bar-item w3-button">About Me</a>
-      <button class="w3-button w3-block w3-left-align" onclick="myAccFunc()">Math 114</button>
-      <div id="demoAcc" class="w3-bar-block w3-hide w3-white w3-card-4">
-          <a href="math_114_fall_2017.html" class="w3-bar-item w3-button">Fall 2017</a>
-          <a href="math_114_spring_2017.html" class="w3-bar-item w3-button">Spring 2017</a>
-           
-      </div>
-      <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
-   </div>            
-        
-   <script>
-    function myAccFunc() {
-        var x = document.getElementById("demoAcc");
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-            x.previousElementSibling.className += " w3-green";
-        } else { 
-            x.className = x.className.replace(" w3-show", "");
-            x.previousElementSibling.className = 
-            x.previousElementSibling.className.replace(" w3-green", "");
-        }
-    }
-    </script> 
-        
-        
-        
-   <!--              Actual content goes here                 -->   
     
-   <div id="main" style="margin-left:25%">
-       Under Construction!
-       <img src = "ivan.jpg" alt="HTML5 Icon" class = "about_me_img">
-        
-   </div>     
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-</body>
+  
+  <body>
+    <div id="wrapper">
 
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <nav id="spy">
+                <ul class="sidebar-nav nav">
+                    <li class="sidebar-brand">
+                        <a href="#home"><span class="fa fa-home solo">Home</span></a>
+                    </li>
+                    <li data-toggle="collapse" data-target="#new" class="collapsed">
+                        <a href="#anch1" data-scroll>
+                            <span class="fa fa-anchor solo">Anchor 1</span>
+                        </a>
+                    </li>
+                    <ul class="sub-menu collapse" id="new">
+                                    <li>New New 1</li>
+                    </ul>
+                    <li>
+                        <a href="#anch2" data-scroll>
+                            <span class="fa fa-anchor solo">Anchor 2</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#anch3" data-scroll>
+                            <span class="fa fa-anchor solo">Anchor 3</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#anch4" data-scroll>
+                            <span class="fa fa-anchor solo">Anchor 4</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
+        <!-- Page content -->
+        <div id="page-content-wrapper">
+            <div class="content-header">
+                <h1 id="home">
+                    <a id="menu-toggle" href="#" class="glyphicon glyphicon-align-justify btn-menu toggle">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    Sidebar Navigation Template
+                </h1>
+            </div>
 
+            <div class="page-content inset" data-spy="scroll" data-target="#spy">
+                <div class="row">
+  
+                        <div class="jumbotron text-center" >
+                            <h1>Hello Beautiful!</h1>
+                            <p>This is a sidebar navigation responsive template built off of Bootstrap 3.0 and simple sidebar template. It includes anchors, scroll spy, smooth scroll, and Awesome icon fonts.</p>
+                            <p><a class="btn btn-default">Click On Me!</a>
+                            <a class="btn btn-info">Tweet Me!</a></p>
+                        </div>
+    
+                </div>
+                <div class="row">
+                    <div class="col-md-12 well">
+                        <legend id="anch1">Anchor 1</legend>
+                        <p>a</p>
+                        <p>b</p>
+                    </div>
+                    <div class="col-md-12 well">
+                        <legend id="anch2">Anchor 2</legend>
+                        <p>c</p>
+                        <p>d</p>
+                    </div>
+                    <div class="col-md-12 well">
+                        <legend id="anch3">Anchor 3</legend>
+                        <p>e</p>
+                        <p>f</p>
+                    </div>
+                    <div class="col-md-12 well">
+                        <legend id="anch4">Anchor 4</legend>
+                        <p>g</p>
+                        <p>h</p>
+                    </div>
+                </div>
 
+                <div class="navbar navbar-default navbar-static-bottom">
+                    <p class="navbar-text pull-left">
+                        Built by <a href="http://mvnguyen.com" target="_blank">Michael V Nguyen
+                    </p>
+                </div>
+            </div>
 
+        </div>
 
+    </div>
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 </html>
