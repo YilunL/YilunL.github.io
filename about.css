@@ -54,6 +54,10 @@ h2{
     color: #FFFFFF;
 }
 
+p{
+    text-align: left;
+}
+
 html body{
     background-color: #D5D6D2;
 }
