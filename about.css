@@ -1,18 +1,12 @@
 /*********************************************************************************/
+/*                             about me page                                     */
+/*********************************************************************************/
 .about_me_img {
     display: block;
     margin: auto;
     width: 33%;
 }
 
-.main{
-    display: block;
-    top: 0px;
-}
 
-
-.container .row .well{
-    display: block;
-}
 
 
