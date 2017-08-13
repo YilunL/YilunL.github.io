@@ -46,7 +46,7 @@
 }
 
 .degree{
-    color: #000000;
+    color: #C6D166;
 }
 
 .edu{
@@ -62,6 +62,13 @@ h1{
 
 h2{
     color: #3A5199;
+}
+
+.intro{
+    border: 2px solid #A01D26;
+    border-radius: 10px;
+    color: #16253D;
+    margin: 40px 0;    
 }
 
 .sem{
