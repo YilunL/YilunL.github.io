@@ -5,13 +5,13 @@
     width: 33%;
 }
 
-#main{
+.main{
     display: block;
     top: 0px;
 }
 
 
-.row .well{
+.container .row .well{
     display: block;
 }
 
