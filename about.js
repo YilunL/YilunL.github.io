@@ -10,6 +10,11 @@ $(document).ready(function() {
 		prevTitle.not(":has(ul)").append('<ul class="sub-menu"></ul>');
 		prevTitle.find('.sub-menu').append('<li id="'+ $(this).attr('id') + '-menu"><a href="#' + $(this).attr('id') + '">' + $(this).html() + '</li>');
 	});
+    staticContent.find('h3').each(function() {
+		prevTitle = sidebarMainMenu.find('#' + $(this).prevAll('h2').first().attr('id') + '-menu');
+		prevTitle.not(":has(ul)").append('<ul class="sub-menu"></ul>');
+		prevTitle.find('.sub-menu').append('<li id="'+ $(this).attr('id') + '-menu"><a href="#' + $(this).attr('id') + '">' + $(this).html() + '</li>');
+	});
 	sidebarMainMenu.affix({
 	      offset: {
 	        top: 0  // To Modify according to the height offset
