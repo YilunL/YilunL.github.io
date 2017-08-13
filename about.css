@@ -41,13 +41,20 @@
     
 }
 
+.courses_list{
+    text-align: left;
+}
+
+.degree{
+    color: #000000;
+}
+
 .edu{
     border: 2px solid #16253D;
     border-radius: 10px;
     color: #16253D;
     margin: 40px 0;   
 }
-
 
 h1{
     color: #962715;
@@ -65,9 +72,7 @@ html body{
     background-color: #FFFFFF;
 }
 
-.courses_list{
-    text-align: left;
-}
+
 
 
 
