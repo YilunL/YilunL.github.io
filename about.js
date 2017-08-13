@@ -1,27 +1,5 @@
-$(document).ready(function() {
-        
-/*Menu-toggle*/
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("active");
+$(document).ready(function () {
+    $('label.tree-toggler').click(function () {
+        $(this).parent().children('ul.tree').toggle(300);
     });
-
-    /*Scroll Spy*/
-    $('body').scrollspy({ target: '#spy', offset:80});
-
-    /*Smooth link animation*/
-    $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: target.offset().top
-                }, 1000);
-                return false;
-            }
-        }
-    });
-        
 });
