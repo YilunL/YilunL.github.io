@@ -44,7 +44,8 @@
 .edu{
     border: 2px solid #1E1E20;
     border-radius: 10px;
-    margin: 60px auto;
+    color: #16253D
+    margin: 60px auto;   
 }
 
 
@@ -62,7 +63,6 @@ h4{
 
 html body{
     background-color: #FFFFFF;
-    color: #16253D
 }
 
 .courses_list{
