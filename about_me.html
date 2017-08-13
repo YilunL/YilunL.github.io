@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title> About Me </title>
+    <title> About ee </title>
     <link href="/about.css" type="text/css" rel="stylesheet">
     <link href="/w3.css" type="text/css" rel="stylesheet">
     <link href="/style.css" type="text/css" rel="stylesheet">
@@ -26,59 +26,32 @@
     
 <body>
    <!--                       Creating a sidebar                           --> 
-  <div class="w3-sidebar w3-bar-block w3-collapse w3-card-2" style="width:200px;" id="mySidebar">
-  <button class="w3-bar-item w3-button w3-hide-large"
-  onclick="w3_close()">Close &times;</button>
-  <a href="about_me.html" class="w3-bar-item w3-button">About Me</a>
-  <button class="w3-bar-item w3-button w3-hide-large" onclick="myAccFunc()">Math 114</button>
-      <div id="demoAcc" class="w3-bar-block w3-hide w3-white w3-card-4">
-          <a href="math_114_fall_2017.html" class="w3-bar-item w3-button">Fall 2017</a>
-          <a href="math_114_spring_2017.html" class="w3-bar-item w3-button">Spring 2017</a>
-      </div> 
-  <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
-  
+
+<div class="w3-sidebar w3-light-grey w3-card-4 w3-animate-left" style="width:200px" id="mySidebar">
+  <div class="w3-bar w3-dark-grey">
+  <span class="w3-bar-item w3-padding-16">Content</span>
+  <button onclick="w3_close()" class="w3-bar-item w3-button w3-right w3-padding-16" title="close Sidebar">×</button>
+  </div>
+  <div class="w3-bar-block">
+  <a class="w3-bar-item w3-button w3-green" href="javascript:void(0)">Home</a>
+  <a class="w3-bar-item w3-button" href="javascript:void(0)">About</a>
+  <a class="w3-bar-item w3-button" href="javascript:void(0)">Contact</a>
+  <div class="w3-dropdown-hover">
+    <a class="w3-button" href="javascript:void(0)">Dropdown <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a class="w3-bar-item w3-button" href="javascript:void(0)">Link 1</a>
+      <a class="w3-bar-item w3-button" href="javascript:void(0)">Link 2</a>
+      <a class="w3-bar-item w3-button" href="javascript:void(0)">Link 3</a>
+    </div>
+  </div>
+  <a class="w3-bar-item w3-button" href="javascript:void(0)">Support</a>
+  </div>
 </div>
 
-<div class="w3-main" style="margin-left:200px">
+<div id="main" style="margin-left:200px">
 
-<div class="w3-teal">
-  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
-  <div class="w3-container">
-    <h1>My Page</h1>
-  </div>
-  </div>
-</div>
-
-<script>
-function w3_open() {
-  document.getElementById("main").style.marginLeft = "25%";
-  document.getElementById("mySidebar").style.width = "25%";
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("openNav").style.display = 'none';
-}
-function w3_close() {
-  document.getElementById("main").style.marginLeft = "0%";
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("openNav").style.display = "inline-block";
-} 
-    
-function myAccFunc() {
-    var x = document.getElementById("demoAcc");
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-            x.previousElementSibling.className += " w3-blue";
-        } else { 
-            x.className = x.className.replace(" w3-show", "");
-            x.previousElementSibling.className = 
-            x.previousElementSibling.className.replace(" w3-blue", "");
-        }
-    }
-    
-</script>     
-
-        
-       
-        
+<div class="w3-container w3-display-container">
+  <span title="open Sidebar" style="display:none" id="openNav" class="w3-button w3-transparent w3-display-topleft w3-xlarge" onclick="w3_open()">☰</span>
    <!--              Actual content goes here                 -->   
     
     <div class="main">
@@ -107,6 +80,28 @@ function myAccFunc() {
             </div>
         </div>
     </div>     
+</div>
+
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "180px";
+  document.getElementById("mySidebar").style.width = "180px";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+      
+        
+       
+        
+  
         
         
         
