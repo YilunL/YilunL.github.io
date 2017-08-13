@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title> About ee </title>
+    <title> About Me </title>
     <link href="/about.css" type="text/css" rel="stylesheet">
     <link href="/w3.css" type="text/css" rel="stylesheet">
     <link href="/style.css" type="text/css" rel="stylesheet">
@@ -37,11 +37,10 @@
   <a class="w3-bar-item w3-button" href="javascript:void(0)">About</a>
   <a class="w3-bar-item w3-button" href="javascript:void(0)">Contact</a>
   <div class="w3-dropdown-hover">
-    <a class="w3-button" href="javascript:void(0)">Dropdown <i class="fa fa-caret-down"></i></a>
-    <div class="w3-dropdown-content w3-bar-block w3-card-4">
-      <a class="w3-bar-item w3-button" href="javascript:void(0)">Link 1</a>
-      <a class="w3-bar-item w3-button" href="javascript:void(0)">Link 2</a>
-      <a class="w3-bar-item w3-button" href="javascript:void(0)">Link 3</a>
+    <a class="w3-button" href="javascript:void(0)" onclick="myAccFunc()">Accordion <i class="fa fa-caret-down"></i></a>
+    <div id="demoAcc" class="w3-hide">
+        <a href="#" class="w3-bar-item w3-button">Link</a>
+        <a href="#" class="w3-bar-item w3-button">Link</a>
     </div>
   </div>
   <a class="w3-bar-item w3-button" href="javascript:void(0)">Support</a>
@@ -95,6 +94,15 @@ function w3_close() {
   document.getElementById("main").style.marginLeft = "0";
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("openNav").style.display = "inline-block";
+}
+    
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
 }
 </script>
       
