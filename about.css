@@ -5,8 +5,9 @@
     width: 33%;
 }
 
-#static-content {
+#main{
     display: block;
+    top: 0px;
 }
 
 
