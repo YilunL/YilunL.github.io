@@ -45,33 +45,29 @@
     border: 2px solid #16253D;
     border-radius: 10px;
     color: #16253D;
-    margin: 40px auto;  
-    text-align: left;
+    margin: 40px 0;   
 }
 
 
 h1{
-    color: #962715;   
+    color: #962715;
 }
 
 h2{
     color: #3A5199;
-    text-align: center;
-}
-
-h3{
-    text-align: center;
 }
 
 h4{
     color: #BBC3C6;
-    text-align: center;
 }
 
 html body{
     background-color: #FFFFFF;
 }
 
+.courses_list{
+    text-align: left;
+}
 
 
 
