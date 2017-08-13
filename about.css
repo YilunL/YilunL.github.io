@@ -35,17 +35,23 @@ ul {
 }
 
 #static-content {
+    color: #2F2E33;
     font-family: 'Raleway', sans-serif;
     text-align: center;
+    
 }
 
 
 
 h1{
-    color: #CD7213;
+    color: #3A5199;
 }
 
 h2{
-    color: #EFB509;
+    color: #FFFFFF;
 }
 
+html body{
+    background-color: #D5D6D2;
+}
+    
