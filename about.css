@@ -69,12 +69,13 @@ h2{
 }
 
 .intro{
+    padding: 20px, 5px;
     border: 2px solid #ACBEBE;
     border-radius: 10px;
     color: #16253D;
     font-size: 16px;
     margin: 40px 0; 
-    padding: 20px, 5px;
+
     text-align: left;
 }
 
