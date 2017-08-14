@@ -41,6 +41,10 @@
     
 }
 
+#openNav {
+    position: fixed;
+}
+
 .courses_list{
     text-align: left;
 }
