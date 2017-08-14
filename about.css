@@ -82,6 +82,16 @@ h2{
     color: #BBC3C6;
 }
 
+.work{
+    border: 2px solid #1E1F26;
+    border-radius: 10px;
+    color: #1E1F26;
+    margin: 40px 0;   
+}
+
+
+
+
 html body{
     background-color: #FFFFFF;
 }
