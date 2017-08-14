@@ -74,7 +74,8 @@ h2{
     color: #16253D;
     font-size: 18px;
     margin: 40px 0; 
-    padding: 150px auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .sem{
