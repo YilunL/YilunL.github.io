@@ -61,41 +61,12 @@
 <div class="w3-container w3-display-container">
   <span title="open Sidebar" style="display:none" id="openNav" class="w3-button w3-transparent w3-display-topleft w3-xlarge" onclick="w3_open()">☰</span>
     
+  
     
-    
-<body>   
-   <!--                       Creating a sidebar                           --> 
-    
-   <div class="w3-sidebar w3-bar-block" style="width:25%">
-      <a href="about_me.html" class="w3-bar-item w3-button">About Me</a>
-      <button class="w3-button w3-block w3-left-align" onclick="myAccFunc()">Math 114</button>
-      <div id="demoAcc" class="w3-bar-block w3-hide w3-white w3-card-4">
-          <a href="math_114_fall_2017.html" class="w3-bar-item w3-button">Fall 2017</a>
-          <a href="math_114_spring_2017.html" class="w3-bar-item w3-button">Spring 2017</a>
-           
-      </div>
-      <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
-   </div>            
-        
-   <script>
-    function myAccFunc() {
-        var x = document.getElementById("demoAcc");
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-            x.previousElementSibling.className += " w3-green";
-        } else { 
-            x.className = x.className.replace(" w3-show", "");
-            x.previousElementSibling.className = 
-            x.previousElementSibling.className.replace(" w3-green", "");
-        }
-    }
-    </script> 
-    
-    
-    
+    <!--   Main content goes here -->
     
     <div class = "main"> 
-        <h1> Welcome to the my course webpage for MATH 114 Fall 2017 Semester!! <h1>
+        <h1> Welcome to the my course webpage for MATH 114 Fall 2017 Semester!! </h1>
         
     
     
@@ -112,6 +83,7 @@
     
     
     </div>
+</div>      
         
         
         
@@ -136,8 +108,56 @@
         
         
         
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "180px";
+  document.getElementById("mySidebar").style.width = "180px";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+    
+function myAccFunc(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+      
+        
+       
+        
+  
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="about.js"></script>           
         
         
         
