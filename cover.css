@@ -196,3 +196,8 @@ body {
     width: 42rem;
   }
 }
+
+/* helping searches */
+.search_terms{
+    opacity: 0;
+}
