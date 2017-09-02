@@ -21,7 +21,10 @@
     text-align: left;
 }
 
-h3{
+.head{
     color: #01256e;
 }
 
+.subhead{
+    color: #74000e;
+}
