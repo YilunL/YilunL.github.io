@@ -38,9 +38,8 @@
     font-weight: 900;
 }
 
-
-.announcement a:link{
-    color: #ff69b4;
+a.announcement{
+    color: #FF69B4; 
 }
 
 
