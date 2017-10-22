@@ -36,10 +36,12 @@
 .announcement{
     font-size: 48px;
     font-weight: 900;
-    color: #ff69b4;
 }
 
 
+.announcement a:link{
+    color: #ff69b4;
+}
 
 
 
