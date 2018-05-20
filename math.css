@@ -24,6 +24,10 @@ a.this_sem{
     background-color: #F9acbb; /* pink */
 }
 
+.bg-3 {
+    background-color: #a2eae0;
+}
+
 .big_list {
     font-size: 18px;
 }
@@ -50,6 +54,10 @@ a.this_sem{
 
 .head{
     color: #01256e;
+}
+
+.prev_sem{
+    color: #e4e0dc;
 }
 
 .SP2017{
