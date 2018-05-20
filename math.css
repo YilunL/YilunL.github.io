@@ -6,7 +6,8 @@ a.announcement{
 }
 
 a.this_sem{
-    color: #e4e0dc;
+    color: #FFFFFF;
+    font-weight: bold;
 }
 
 .announcement{
@@ -16,7 +17,7 @@ a.this_sem{
 }
 
 .bg-1 {
-    background-color: #df744a; /* light green */
+    background-color: #92d7ef; /* light green */
     color: #eaeef4;
 }
 
