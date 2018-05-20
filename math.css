@@ -11,6 +11,11 @@ a.announcement{
     
 }
 
+.bg-1 {
+    background-color: #92d7ef; /* light blue */
+    color: #DF744A;
+}
+
 .big_list {
     font-size: 16px;
 }
