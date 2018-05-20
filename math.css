@@ -1,6 +1,20 @@
 /*********************************************************************************/
-/*                                  114 page                                     */
+/*                                  114/240 page                                     */
 /*********************************************************************************/
+a.announcement{
+    color: #FF69B4; 
+}
+
+.announcement{
+    font-size: 54px;
+    font-weight: 900;
+    
+}
+
+.big_list {
+    font-size: 16px;
+}
+
 .btn_114{
   border: 2px solid #3F681C;
   border-radius: 4px;
@@ -16,12 +30,17 @@
   width: 50%;
 }
 
-.SP2017{
-    text-align: left;
+.container-fluid {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .head{
     color: #01256e;
+}
+
+.SP2017{
+    text-align: left;
 }
 
 .subhead{
@@ -32,22 +51,11 @@
     color: #f2c100;
 }
 
-.announcement{
-    font-size: 54px;
-    font-weight: 900;
-    
-}
-
-a.announcement{
-    color: #FF69B4; 
-}
-
 .title{
     text-align: center
 }
 
-.container-fluid {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
+
+
+
 
