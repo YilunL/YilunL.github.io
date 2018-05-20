@@ -10,6 +10,10 @@ a.this_sem{
     font-weight: bold;
 }
 
+a.this_sem:hover {
+    color: hotpink;
+}
+
 .announcement{
     font-size: 54px;
     font-weight: 900;
