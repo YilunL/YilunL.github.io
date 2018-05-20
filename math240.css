@@ -1,0 +1,50 @@
+/*********************************************************************************/
+/*                                  114/240 page                                     */
+/*********************************************************************************/
+a.announcement{
+    color: #FF69B4; 
+}
+
+.announcement{
+    font-size: 54px;
+    font-weight: 900;
+}
+
+.btn_114{
+  border: 2px solid #3F681C;
+  border-radius: 4px;
+  color: #3F681C;
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 10px 0px;
+  padding: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+.head{
+    color: #01256e;
+}
+
+.SP2017{
+    text-align: left;
+}
+
+.subhead{
+    color: #74000e;
+}
+
+.subhead_link{
+    color: #f2c100;
+}
+
+.title{
+    text-align: center;
+}
+
+
+
+
