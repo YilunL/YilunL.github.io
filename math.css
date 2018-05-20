@@ -16,7 +16,7 @@ a.this_sem{
 }
 
 .bg-1 {
-    background-color: #a2eae0; /* light green */
+    background-color: #df744a; /* light green */
     color: #eaeef4;
 }
 
@@ -73,9 +73,12 @@ a.this_sem{
 }
 
 .title{
-    text-align: center
+    text-align: center;
 }
 
+.welcome{
+    color: #0f7e9b;
+}
 
 
 
