@@ -74,16 +74,11 @@ a.this_sem:hover {
     font-weight: bold;
 }
 
-.row.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-}
-.row.no-gutters > [class^="col-"],
-.row.no-gutters > [class*=" col-"] {
-  padding-right: 0;
-  padding-left: 0;
-}
+.row > div[class*="col-"] > .row > div[class*="col-"] {
 
+    padding:0;
+  
+}
 
 .SP2017{
     text-align: left;
