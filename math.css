@@ -37,6 +37,10 @@ a.this_sem:hover {
     background-color: #f0df99;
 }
 
+.bg-5 {
+    background-color: #fedcd2;
+}
+
 .big_list {
     font-size: 18px;
 }
