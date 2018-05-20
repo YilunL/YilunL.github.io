@@ -74,10 +74,9 @@ a.this_sem:hover {
     font-weight: bold;
 }
 
-.row > div[class*="col-"] > .row > div[class*="col-"] {
-
-    padding:0;
-  
+.row .row {
+    margin-top: -15px;
+    margin-bottom: -15px;
 }
 
 .SP2017{
