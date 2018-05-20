@@ -21,7 +21,7 @@ a.this_sem:hover {
 }
 
 .bg-1 {
-    background-color: #92d7ef; /* light green */
+    background-color: #92d7ef; /* light blue*/
     color: #FFFFFF;
 }
 
@@ -79,6 +79,11 @@ a.this_sem:hover {
 
 .title{
     text-align: center;
+}
+
+.title_white{
+    color: #FFFFFF;
+    font-weight: bold;
 }
 
 .welcome{
