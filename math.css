@@ -5,6 +5,10 @@ a.announcement{
     color: #FF69B4; 
 }
 
+a.this_sem{
+    color: #92d7ef;
+}
+
 .announcement{
     font-size: 54px;
     font-weight: 900;
@@ -12,13 +16,12 @@ a.announcement{
 }
 
 .bg-1 {
-    background-color: #92d7ef; /* light blue */
-    color: #DF744A;
+    background-color: #a2eae0; /* light green */
+    color: #FFFFFF;
 }
 
 .bg-2 {
     background-color: #8FD8D2; /* light blue */
-    color: #FFFFFF;
 }
 
 .big_list {
