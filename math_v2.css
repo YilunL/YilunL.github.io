@@ -15,6 +15,10 @@ a.piazza{
     font-weight: 900;
 }
 
+.big_list {
+    font-size: 18px;
+}
+
 .btn_114{
   border: 2px solid #3F681C;
   border-radius: 4px;
