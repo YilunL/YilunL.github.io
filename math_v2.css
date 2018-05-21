@@ -5,6 +5,11 @@ a.announcement{
     color: #FF69B4; 
 }
 
+a.piazza{
+    color: #92d7ef;
+    font-weight: bold;
+}
+
 .announcement{
     font-size: 54px;
     font-weight: 900;
