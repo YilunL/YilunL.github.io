@@ -33,6 +33,10 @@ a.announcement{
     color: #01256e;
 }
 
+.row {
+    padding-left: 15px;
+}
+
 .SP2017{
     text-align: left;
 }
