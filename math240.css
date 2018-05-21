@@ -25,6 +25,10 @@ a.announcement{
   width: 50%;
 }
 
+.container-fluid {
+    padding-left: 15px;
+}
+
 .head{
     color: #01256e;
 }
