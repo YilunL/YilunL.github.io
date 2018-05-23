@@ -1,1 +1,0 @@
-- Drop "sp 18" from Math 240
