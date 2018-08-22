@@ -90,6 +90,19 @@
                         <ul class="main-menu nav nav-stacked affix ul_sidebar">
                         </ul>
                     </div>
+                    
+                    <div id="static-content" class="col-md-10">
+                        <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-left-align">
+                            Accordion</button>
+
+                        <div id="Demo1" class="w3-hide">
+                            <ul class="w3-ul">
+                                <li>Jill</li>
+                                <li>Eve</li>
+                                <li>Adam</li>
+                            </ul>
+                        </div>
+                    </div>
 
 
 
@@ -137,40 +150,40 @@
 
 
                     <script>
-                            function w3_open() {
-                                document.getElementById("main").style.marginLeft = "180px";
-                                document.getElementById("mySidebar").style.width = "180px";
-                                document.getElementById("mySidebar").style.display = "block";
-                                document.getElementById("openNav").style.display = 'none';
+                        function w3_open() {
+                            document.getElementById("main").style.marginLeft = "180px";
+                            document.getElementById("mySidebar").style.width = "180px";
+                            document.getElementById("mySidebar").style.display = "block";
+                            document.getElementById("openNav").style.display = 'none';
+                        }
+                        function w3_close() {
+                            document.getElementById("main").style.marginLeft = "0";
+                            document.getElementById("mySidebar").style.display = "none";
+                            document.getElementById("openNav").style.display = "inline-block";
+                        }
+
+                        function myAccFunc(id) {
+                            var x = document.getElementById(id);
+                            if (x.className.indexOf("w3-show") == -1) {
+                                x.className += " w3-show";
+                            } else {
+                                x.className = x.className.replace(" w3-show", "");
                             }
-                            function w3_close() {
-                                document.getElementById("main").style.marginLeft = "0";
-                                document.getElementById("mySidebar").style.display = "none";
-                                document.getElementById("openNav").style.display = "inline-block";
-                            }
-            
-                            function myAccFunc(id) {
-                                var x = document.getElementById(id);
-                                if (x.className.indexOf("w3-show") == -1) {
-                                    x.className += " w3-show";
-                                } else {
-                                    x.className = x.className.replace(" w3-show", "");
-                                }
-                            }
-                        </script>
-            
-            
-            
-            
-            
-            
-            
-            
-                        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-                        <!-- Include all compiled plugins (below), or include individual files as needed -->
-                        <script src="js/bootstrap.min.js"></script>
-                        <script src="about.js"></script>
+                        }
+                    </script>
+
+
+
+
+
+
+
+
+                    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                    <!-- Include all compiled plugins (below), or include individual files as needed -->
+                    <script src="js/bootstrap.min.js"></script>
+                    <script src="about.js"></script>
 
 </body>
 
