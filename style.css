@@ -17,7 +17,7 @@ button.accordion.active, button.accordion:hover {
 }
 
 .default-header {
-    color: #045ea7
+    background-color: #045ea7
 }
 
 /* Style the accordion panel. Note: hidden by default */
