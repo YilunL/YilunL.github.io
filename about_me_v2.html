@@ -362,12 +362,23 @@
                         }
                     </script>
 
+                    <script>
+                        var acc = document.getElementsByClassName("w3-button");
+                        var i;
 
-
-
-
-
-
+                        for (i = 0; i < acc.length; i++) {
+                            acc[i].onclick = function () {
+                                var panel = this.nextElementSibling;
+                                this.classList.toggle("active");
+                                var panel = this.nextElementSibling;
+                                if (panel.style.maxHeight) {
+                                    panel.style.maxHeight = null;
+                                } else {
+                                    panel.style.maxHeight = panel.scrollHeight + "px";
+                                }
+                            }
+                            acc[i].click();
+                        }    </script>
 
                     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
