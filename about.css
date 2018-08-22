@@ -47,6 +47,10 @@
     position: fixed;
 }
 
+body {
+    padding-bottom: 20px;
+}
+
 .courses_list{
     text-align: left;
 }
