@@ -3284,7 +3284,7 @@ input, select, textarea {
 		border-radius: 4px;
 		box-shadow: 0 0.075em 0.35em 0 rgba(0, 0, 0, 0.125);
 		list-style: none;
-		margin-top: calc(-0.25em + 1px);
+		margin-top: calc(-0.25em);
 		min-width: 12em;
 		padding: 0.25em 0;
 	}
