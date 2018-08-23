@@ -3164,7 +3164,7 @@ input, select, textarea {
 /* Wrapper */
 
 	.wrapper {
-		padding: 0 0 4em 0;
+		padding: 6em 0 4em 0;
 	}
 
 		.wrapper.style2 {
@@ -3337,7 +3337,7 @@ input, select, textarea {
 /* Header */
 
 	#page-wrapper {
-		padding-top: 0;
+		padding-top: 3.5em;
 	}
 
 	#header {
@@ -3670,7 +3670,7 @@ input, select, textarea {
 		/* Wrapper */
 
 			.wrapper {
-				padding: 0 2.5em 2.5em 2.5em;
+				padding: 4.5em 2.5em 2.5em 2.5em;
 			}
 
 		/* Banner */
@@ -3786,7 +3786,7 @@ input, select, textarea {
 		/* Wrapper */
 
 			.wrapper {
-				padding: 0 1.5em 1.25em 1.5em;
+				padding: 3.25em 1.5em 1.25em 1.5em;
 			}
 
 		/* Header */
@@ -4041,7 +4041,7 @@ input, select, textarea {
 		/* Wrapper */
 
 			.wrapper {
-				padding: 0 1.25em 1em 1.25em;
+				padding: 3em 1.25em 1em 1.25em;
 			}
 
 		/* Banner */
