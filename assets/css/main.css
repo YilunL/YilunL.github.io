@@ -3286,7 +3286,7 @@ input, select, textarea {
 		list-style: none;
 		margin-top: calc(-0.25em + 1px);
 		min-width: 12em;
-		padding: 0 0;
+		padding: 0.25em 0;
 	}
 
 		.dropotron > li {
@@ -3312,7 +3312,7 @@ input, select, textarea {
 
 		.dropotron.level-0 {
 			font-size: 0.8em;
-			margin-top: 1em;
+			margin-top: 0;
 		}
 
 			.dropotron.level-0:before {
