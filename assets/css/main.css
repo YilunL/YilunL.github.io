@@ -4097,5 +4097,9 @@ a.book_notes{
     width: 50%;
     border-radius: 20%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.photo_cred{
 	padding-bottom: 20px;
+	font-size: 8px;
 }
