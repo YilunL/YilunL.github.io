@@ -2532,7 +2532,9 @@ input, select, textarea {
 			}
 
 		.image.about_img {
+			display: block;
 			margin: auto;
+			height: auto;
 		}	
 /* List */
 
