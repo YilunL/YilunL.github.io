@@ -2536,7 +2536,7 @@ input, select, textarea {
 			display: block;
 			margin: auto;
 			height: auto;
-			overflow: auto;
+			position: auto;
 		}	
 /* List */
 
