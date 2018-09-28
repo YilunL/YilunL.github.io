@@ -4082,10 +4082,7 @@ a.piazza{
     font-weight: bold;
 }
 
-a.book_notes{
-	color: #f2c100;
-    font-weight: bold;
-}
+
 
 .about{
 	text-align: center
@@ -4101,6 +4098,11 @@ a.book_notes{
 
 .bkg {
 	color: #57000a
+}
+
+.book_notes{
+	color: #f2c100;
+    font-weight: bold;
 }
 
 .photo_cred{
