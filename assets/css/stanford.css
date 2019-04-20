@@ -2558,7 +2558,8 @@ input, select, textarea {
 	}
 
 		ul li {
-			padding-left: 0.5em;
+            padding-left: 0.5em;
+            color: #2e2d29;
 		}
 
 		ul.alt {
@@ -2580,9 +2581,6 @@ input, select, textarea {
 		margin: 0 0 2em 0;
     }
     
-    li {
-        color: #2e2d29;
-    }
 
 /* Icons */
 
