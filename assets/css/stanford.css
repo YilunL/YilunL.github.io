@@ -2578,7 +2578,11 @@ input, select, textarea {
 
 	dl {
 		margin: 0 0 2em 0;
-	}
+    }
+    
+    li {
+        color: #2e2d29;
+    }
 
 /* Icons */
 
