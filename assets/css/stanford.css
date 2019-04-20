@@ -111,12 +111,12 @@ input, select, textarea {
 		-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #000000;
+		color: #006CB8;
 		text-decoration: none;
 	}
 
 		a:hover {
-			color: #000000 !important;
+			color: #00548f !important;
 			border-bottom-color: transparent;
 		}
 
@@ -4080,7 +4080,7 @@ input, select, textarea {
 
 /* MY OWN SHIT */
 a.piazza{
-    color: #92d7ef;
+    color: #006CB8;
     font-weight: bold;
 }
 
