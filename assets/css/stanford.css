@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	html, body {
-		background: #57000a;
+		background: #ffffff;
 	}
 
 	body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -4105,7 +4105,7 @@ a.piazza{
 
 
 .bkg {
-	color: #57000a
+	color: #ffffff
 }
 
 .book_notes{
