@@ -3447,10 +3447,10 @@ input, select, textarea {
 		}
 
 		#banner:after {
-			/* background-image: -moz-linear-gradient(top, #ffffff, #ffffff), url("images/overlay.png");;
-			background-image: -webkit-linear-gradient(top, #ffffff, #ffffff), url("images/overlay.png");;
-			background-image: -ms-linear-gradient(top, #ffffff, #ffffff), url("images/overlay.png");;
-			background-image: linear-gradient(top, #ffffff, #ffffff), url("images/overlay.png");; */
+			background-image: -moz-linear-gradient(top, #8c1515, #8c1515), url("images/overlay.png");;
+			background-image: -webkit-linear-gradient(top, #8c1515, #8c1515), url("images/overlay.png");;
+			background-image: -ms-linear-gradient(top, #8c1515, #8c1515), url("images/overlay.png");;
+			background-image: linear-gradient(top, #8c1515, #8c1515), url("images/overlay.png");;
 			content: '';
 			display: block;
 			height: 100%;
