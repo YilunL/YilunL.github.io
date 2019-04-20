@@ -111,17 +111,17 @@ input, select, textarea {
 		-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #2e2d29;
+		color: #000000;
 		text-decoration: none;
 	}
 
 		a:hover {
-			color: #2e2d29 !important;
+			color: #000000 !important;
 			border-bottom-color: transparent;
 		}
 
 	strong, b {
-		color: #2e2d29;
+		color: #000000;
 		font-weight: 360;
 	}
 
@@ -130,12 +130,12 @@ input, select, textarea {
 	}
 
 	p {
-        color: #2e2d29;
+        color: #000000;
 		margin: 0 0 2em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #2e2d29;
+		color: #000000;
 		font-weight: 360;
 		line-height: 1em;
 		margin: 0 0 1em 0;
@@ -2151,7 +2151,7 @@ input, select, textarea {
 	}
 
 	header p {
-		color: #2e2d29;
+		color: #000000;
 		position: relative;
 		margin: 0 0 1.5em 0;
 	}
@@ -2183,7 +2183,7 @@ input, select, textarea {
 	}
 
 		header.major:after {
-			background: #2e2d29;
+			background: #000000;
 			content: '';
 			display: inline-block;
 			height: 0.2em;
@@ -2208,7 +2208,7 @@ input, select, textarea {
 		}
 
 	label {
-		color: #2e2d29;
+		color: #000000;
 		display: block;
 		font-size: 0.9em;
 		font-weight: 300;
@@ -4119,7 +4119,7 @@ a.piazza{
 }
 
 .text {
-    color: #2e2d29;
+    color: #000000;
 }
 
 .land_text{
