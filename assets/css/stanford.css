@@ -131,6 +131,7 @@ input, select, textarea {
 
 	p {
         color: #000000;
+        font-weight: 200;
 		margin: 0 0 2em 0;
 	}
 
@@ -4120,6 +4121,7 @@ a.piazza{
 
 .text {
     color: #000000;
+    font-weight: 200;
 }
 
 .land_text{
