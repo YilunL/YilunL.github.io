@@ -100,7 +100,7 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.75);
 		font-family: "Roboto", Helvetica, sans-serif;
-		font-size: 16pt;
+		font-size: 3pt;
 		font-weight: 300;
 		line-height: 1.75em;
 	}
