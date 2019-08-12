@@ -100,8 +100,8 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.75);
 		font-family: "Roboto", Helvetica, sans-serif;
-		font-size: 3pt;
-		font-weight: 300;
+		font-size: 15pt;
+		font-weight: 250;
 		line-height: 1.75em;
 	}
 
@@ -4121,7 +4121,7 @@ a.piazza{
 
 .text {
     color: #000000;
-    font-weight: 200;
+    font-weight: 250;
 }
 
 .land_text{
