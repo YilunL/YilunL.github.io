@@ -13189,7 +13189,7 @@ df <span class="o">&lt;-</span> cars <span class="o">%&gt;%</span>
 <span class="n">bnds</span> <span class="o">=</span> <span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">),</span> 
         <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">))</span>
 
-<span class="n">res_eye_wt</span> <span class="o">=</span> <span class="n">minimize</span><span class="p">(</span><span class="n">objective</span><span class="p">,</span>
+<span class="n">res_init_wt</span> <span class="o">=</span> <span class="n">minimize</span><span class="p">(</span><span class="n">objective</span><span class="p">,</span>
                       <span class="n">theta_2</span><span class="p">,</span> 
                       <span class="n">args</span> <span class="o">=</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">share</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">y_it</span><span class="p">,</span> 
                               <span class="n">J</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">N</span><span class="p">,</span> <span class="n">marks</span><span class="p">,</span> <span class="n">markets</span><span class="p">,</span> <span class="mf">1e-4</span><span class="p">,</span> 
@@ -13588,8 +13588,8 @@ df <span class="o">&lt;-</span> cars <span class="o">%&gt;%</span>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># save the output</span>
-<span class="n">outfile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;res_eye_wt_bfgs.pickle&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span>
-<span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">res_eye_wt</span><span class="p">,</span> <span class="n">outfile</span><span class="p">)</span>
+<span class="n">outfile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;res_init_wt_bfgs.pickle&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span>
+<span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">res_init_wt</span><span class="p">,</span> <span class="n">outfile</span><span class="p">)</span>
 <span class="n">outfile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
 <span class="c1"># remember to write code that reads in the above output later and comment out the save</span>
@@ -13608,7 +13608,7 @@ df <span class="o">&lt;-</span> cars <span class="o">%&gt;%</span>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">obs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">J</span><span class="p">)</span>
 
 <span class="c1"># approximate optimal weighting matrix</span>
-<span class="n">params_2</span> <span class="o">=</span> <span class="n">res_eye_wt</span><span class="o">.</span><span class="n">x</span>
+<span class="n">params_2</span> <span class="o">=</span> <span class="n">res_init_wt</span><span class="o">.</span><span class="n">x</span>
 
 <span class="c1"># calculate mean utility given the optimal parameters (with id weighting matrix)</span>
 <span class="n">d</span><span class="o">.</span><span class="n">delta</span> <span class="o">=</span> <span class="n">solve_delta</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">share</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">y_it</span><span class="p">,</span> 
