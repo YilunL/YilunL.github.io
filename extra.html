@@ -18,6 +18,23 @@
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
+
+    <style>
+        /* CSS for the links */
+        .link-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .link {
+            display: inline-block;
+            padding: 10px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 
 <body class="is-preload">
@@ -116,10 +133,10 @@
                 <header class="major">
                     <h2>Extra</h2>
                     <p>Fun stuff about or related to me!</p>
-                    <div style="display: flex;">
-                        <a href="code.html" style="display: inline-block; padding: 10px; margin: 10px; text-decoration: none; border-radius: 5px;">Code</a>
-                        <a href="media.html" style="display: inline-block; padding: 10px; margin: 10px; text-decoration: none; border-radius: 5px;">Media</a>
-                        <a href="contact.html" style="display: inline-block; padding: 10px; margin: 10px; text-decoration: none; border-radius: 5px;">Contact</a>
+                    <div class="link-container">
+                        <a href="code.html" class="link">Code</a>
+                        <a href="media.html" class="link">Media</a>
+                        <a href="contact.html" class="link">Contact</a>
                     </div>
                 </header>
 
