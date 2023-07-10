@@ -161,18 +161,17 @@
                         <section id="content">
                             <section>
                                 <h2 class="head">Unsolicited Opinions</h2>
-                                <ul class="text">
-                                    <li><a href="#" class="popup-link" onclick="openPopup(event, 'popup1')">Top 10
-                                            Ariana Grande Songs</a>
-                                    </li>
-                                    <li><a href="#" class="popup-link" onclick="openPopup(event, 'popup2')">Top 10 The
-                                            Weeknd Songs</a>
-                                    </li>
+                                <ul>
+                                    <li><a href="#" class="popup-link" onclick="openPopup(event, 'popup1')">Open List
+                                            1</a></li>
+                                    <li> <a href="#" class="popup-link" onclick="openPopup(event, 'popup2')">Open List
+                                            2</a></li>
                                 </ul>
-                                <!-- list 1 -->
+                                <!-- Ari list -->
                                 <div id="popup1" class="popup-container">
                                     <div class="popup-content">
                                         <button class="close-button" onclick="closePopup('popup1')">&times;</button>
+                                        <h3>List 1</h3>
                                         <h3>Top 10 Ariana Grande Songs *my opinion*</h3>
                                         <ol>
                                             <li>everytime</li>
@@ -189,7 +188,7 @@
                                     </div>
                                 </div>
 
-                                <!-- list 2 -->
+                                <!-- Abel list -->
                                 <div id="popup2" class="popup-container">
                                     <div class="popup-content">
                                         <button class="close-button" onclick="closePopup('popup2')">&times;</button>
@@ -261,16 +260,16 @@
     <script>
         // JavaScript code here
         function openPopup(event, containerId) {
-          event.preventDefault();
-          const popupContainer = document.getElementById(containerId);
-          popupContainer.style.display = "block";
+            event.preventDefault();
+            const popupContainer = document.getElementById(containerId);
+            popupContainer.style.display = "block";
         }
-    
+
         function closePopup(containerId) {
-          const popupContainer = document.getElementById(containerId);
-          popupContainer.style.display = "none";
+            const popupContainer = document.getElementById(containerId);
+            popupContainer.style.display = "none";
         }
-      </script>
+    </script>
 </body>
 
 </html>
