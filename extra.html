@@ -232,6 +232,23 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        // JavaScript code here
+        document.addEventListener("DOMContentLoaded", function () {
+            const popupLink = document.querySelector(".popup-link");
+            const popupContainer = document.getElementById("popup-container");
+            const closeButton = document.querySelector(".close-button");
+
+            popupLink.addEventListener("click", function (event) {
+                event.preventDefault();
+                popupContainer.style.display = "block";
+            });
+
+            closeButton.addEventListener("click", function () {
+                popupContainer.style.display = "none";
+            });
+        });
+    </script>
 </body>
 
 </html>
