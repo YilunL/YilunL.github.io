@@ -163,9 +163,10 @@
                                 <h2 class="head">Unsolicited Opinions</h2>
                                 <ul class="text">
                                     <li><a href="#" class="popup-link">Top 10 Ariana Grande Songs</a>
-                                        <div id="popup-container">
+                                        <div id="popup-container1" class="popup-container">
                                             <div class="popup-content">
-                                                <button class="close-button">&times;</button>
+                                                <button class="close-button"
+                                                    onclick="closePopup('popup-container1')">&times;</button>
                                                 <h3>Top 10 Ariana Grande Songs *my opinion*</h3>
                                                 <ol>
                                                     <li>everytime</li>
@@ -183,9 +184,10 @@
                                         </div>
                                     </li>
                                     <li><a href="#" class="popup-link">Top 10 The Weeknd Songs</a>
-                                        <div id="popup-container">
+                                        <div id="popup-container2" class="popup-container">
                                             <div class="popup-content">
-                                                <button class="close-button">&times;</button>
+                                                <button class="close-button"
+                                                    onclick="closePopup('popup-container2')">&times;</button>
                                                 <h3>Top 10 The Weeknd Songs *my opinion*</h3>
                                                 <ol>
                                                     <li>Often</li>
@@ -254,20 +256,17 @@
     <script src="assets/js/main.js"></script>
     <script>
         // JavaScript code here
-        document.addEventListener("DOMContentLoaded", function () {
-            const popupLink = document.querySelector(".popup-link");
-            const popupContainer = document.getElementById("popup-container");
-            const closeButton = document.querySelector(".close-button");
+        function openPopup(event, containerId) {
+            event.preventDefault();
+            const popupContainer = document.getElementById(containerId);
+            popupContainer.style.backgroundColor = bodyBackgroundColor;
+            popupContainer.style.display = "block";
+        }
 
-            popupLink.addEventListener("click", function (event) {
-                event.preventDefault();
-                popupContainer.style.display = "block";
-            });
-
-            closeButton.addEventListener("click", function () {
-                popupContainer.style.display = "none";
-            });
-        });
+        function closePopup(containerId) {
+            const popupContainer = document.getElementById(containerId);
+            popupContainer.style.display = "none";
+        }
     </script>
 </body>
 
