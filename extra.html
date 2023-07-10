@@ -162,47 +162,53 @@
                             <section>
                                 <h2 class="head">Unsolicited Opinions</h2>
                                 <ul class="text">
-                                    <li><a href="#" class="popup-link">Top 10 Ariana Grande Songs</a>
-                                        <div id="popup-container">
-                                            <div class="popup-content">
-                                                <button class="close-button">&times;</button>
-                                                <h3>Top 10 Ariana Grande Songs *my opinion*</h3>
-                                                <ol>
-                                                    <li>everytime</li>
-                                                    <li>One Last Time</li>
-                                                    <li>God is a woman</li>
-                                                    <li>thank u, next</li>
-                                                    <li>no tears left to cry</li>
-                                                    <li>Dangerous Woman</li>
-                                                    <li>Bloodline</li>
-                                                    <li>Be Alright</li>
-                                                    <li>Positions</li>
-                                                    <li>Moonlight</li>
-                                                </ol>
-                                            </div>
-                                        </div>
+                                    <li><a href="#" class="popup-link" onclick="openPopup(event, 'popup1')">Top 10
+                                            Ariana Grande Songs</a>
                                     </li>
-                                    <li><a href="#" class="popup-link">Top 10 The Weeknd Songs</a>
-                                        <div id="popup-container">
-                                            <div class="popup-content">
-                                                <button class="close-button">&times;</button>
-                                                <h3>Top 10 The Weeknd Songs *my opinion*</h3>
-                                                <ol>
-                                                    <li>Often</li>
-                                                    <li>Starboy</li>
-                                                    <li>The Hills</li>
-                                                    <li>Wicked Games</li>
-                                                    <li>Tears in the Rain</li>
-                                                    <li>Tell Your Friends</li>
-                                                    <li>Blinding Lights</li>
-                                                    <li>Pretty</li>
-                                                    <li>The Morning</li>
-                                                    <li>Acquainted</li>
-                                                </ol>
-                                            </div>
-                                        </div>
+                                    <li><a href="#" class="popup-link" onclick="openPopup(event, 'popup2')">Top 10 The
+                                            Weeknd Songs</a>
                                     </li>
                                 </ul>
+                                <!-- list 1 -->
+                                <div id="popup1" class="popup-container">
+                                    <div class="popup-content">
+                                        <button class="close-button" onclick="closePopup('popup1')">&times;</button>
+                                        <h3>Top 10 Ariana Grande Songs *my opinion*</h3>
+                                        <ol>
+                                            <li>everytime</li>
+                                            <li>One Last Time</li>
+                                            <li>God is a woman</li>
+                                            <li>thank u, next</li>
+                                            <li>no tears left to cry</li>
+                                            <li>Dangerous Woman</li>
+                                            <li>Bloodline</li>
+                                            <li>Be Alright</li>
+                                            <li>Positions</li>
+                                            <li>Moonlight</li>
+                                        </ol>
+                                    </div>
+                                </div>
+
+                                <!-- list 2 -->
+                                <div id="popup2" class="popup-container">
+                                    <div class="popup-content">
+                                        <button class="close-button" onclick="closePopup('popup2')">&times;</button>
+                                        <h3>Top 10 The Weeknd Songs *my opinion*</h3>
+                                        <ol>
+                                            <li>Often</li>
+                                            <li>Starboy</li>
+                                            <li>The Hills</li>
+                                            <li>Wicked Games</li>
+                                            <li>Tears in the Rain</li>
+                                            <li>Tell Your Friends</li>
+                                            <li>Blinding Lights</li>
+                                            <li>Pretty</li>
+                                            <li>The Morning</li>
+                                            <li>Acquainted</li>
+                                        </ol>
+                                    </div>
+                                </div>
+
                             </section>
                             <hr />
                         </section>
@@ -254,54 +260,16 @@
     <script src="assets/js/main.js"></script>
     <script>
         // JavaScript code here
-        document.addEventListener("DOMContentLoaded", function() {
-          const popupLinks = document.querySelectorAll(".popup-link");
-          const popupContainer = document.getElementById("popup-container");
-          const closeButton = document.querySelector(".close-button");
+        function openPopup(event, containerId) {
+          event.preventDefault();
+          const popupContainer = document.getElementById(containerId);
+          popupContainer.style.display = "block";
+        }
     
-          popupLinks.forEach(function(link) {
-            link.addEventListener("click", function(event) {
-              event.preventDefault();
-              popupContainer.style.display = "block";
-              // Update the list content based on the clicked link
-              const listTitle = this.textContent;
-              const listItems = getListItems(listTitle);
-              updateList(listTitle, listItems);
-            });
-          });
-    
-          closeButton.addEventListener("click", function() {
-            popupContainer.style.display = "none";
-          });
-    
-          function getListItems(listTitle) {
-            // Modify this function to retrieve the appropriate list items based on the list title
-            if (listTitle === "Open List 1") {
-              return ["List Item 1", "List Item 2", "List Item 3"];
-            } else if (listTitle === "Open List 2") {
-              return ["List Item A", "List Item B", "List Item C"];
-            } else {
-              return [];
-            }
-          }
-    
-          function updateList(title, items) {
-            const popupTitle = document.querySelector(".popup-content h3");
-            const popupList = document.querySelector(".popup-content ul");
-            
-            popupTitle.textContent = title;
-    
-            // Clear existing list items
-            popupList.innerHTML = "";
-    
-            // Add new list items
-            items.forEach(function(item) {
-              const li = document.createElement("li");
-              li.textContent = item;
-              popupList.appendChild(li);
-            });
-          }
-        });
+        function closePopup(containerId) {
+          const popupContainer = document.getElementById(containerId);
+          popupContainer.style.display = "none";
+        }
       </script>
 </body>
 
