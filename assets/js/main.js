@@ -71,6 +71,56 @@
 					visibleClass: 'navPanel-visible'
 				});
 
+		// Make UPenn submenu collapsible on mobile
+			(function() {
+				var $navPanel = $('#navPanel');
+				
+				// Find the UPenn link and wrap its children
+				$navPanel.find('a.link').each(function() {
+					var $link = $(this);
+					var linkText = $link.text().trim();
+					
+					// Check if this is the UPenn parent link
+					if (linkText === 'UPenn') {
+						$link.addClass('has-children');
+						
+						// Get current depth class
+						var currentDepth = 2; // UPenn is at depth-2 (inside Extra)
+						
+						// Find all following links until we hit same or lower depth
+						var $allFollowing = $link.nextAll('a.link');
+						var $children = $();
+						
+						$allFollowing.each(function() {
+							var $this = $(this);
+							// Check if this link is deeper than UPenn (depth > 2)
+							if ($this.hasClass('depth-3') || $this.hasClass('depth-4') || $this.hasClass('depth-5')) {
+								$children = $children.add($this);
+							} else {
+								// Stop when we hit same or lower depth
+								return false;
+							}
+						});
+						
+						// Wrap children in a container
+						if ($children.length > 0) {
+							$children.wrapAll('<div class="submenu-items upenn-submenu"></div>');
+						}
+						
+						// Toggle on click
+						$link.on('click', function(e) {
+							var href = $link.attr('href');
+							if (!href || href === '#' || href === '') {
+								e.preventDefault();
+								e.stopPropagation();
+								$link.toggleClass('is-expanded');
+								$link.next('.submenu-items').toggleClass('is-visible');
+							}
+						});
+					}
+				});
+			})();
+
 	// Parallax.
 	// Disabled on IE (choppy scrolling) and mobile platforms (poor performance).
 		if (browser.name == 'ie'

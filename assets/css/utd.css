@@ -4327,3 +4327,31 @@ a.piazza {
 	background: transparent;
 	cursor: pointer;
 }
+
+/* Mobile Nav Panel - Collapsible Submenus */
+#navPanel .link.has-children {
+	position: relative;
+	cursor: pointer;
+}
+
+#navPanel .link.has-children::after {
+	content: '+';
+	position: absolute;
+	right: 1em;
+	font-size: 1.2em;
+	font-weight: 300;
+	transition: transform 0.2s ease;
+}
+
+#navPanel .link.has-children.is-expanded::after {
+	content: '−';
+}
+
+#navPanel .submenu-items {
+	display: none;
+	overflow: hidden;
+}
+
+#navPanel .submenu-items.is-visible {
+	display: block;
+}
