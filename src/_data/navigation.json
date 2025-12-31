@@ -1,0 +1,42 @@
+[
+  { "title": "Home", "url": "/" },
+  { "title": "CV", "url": "/cv/" },
+  { "title": "Research", "url": "/research/" },
+  {
+    "title": "Extra",
+    "url": "#",
+    "children": [
+      { "title": "Fun", "url": "/fun/" },
+      { "title": "Code", "url": "/code/" },
+      { "title": "Media", "url": "/media/" },
+      { "title": "Contact", "url": "/contact/" },
+      {
+        "title": "UPenn",
+        "url": "#",
+        "children": [
+          {
+            "title": "Math 114",
+            "url": "#",
+            "children": [
+              { "title": "Homepage (Spring 2019)", "url": "/math_114/" },
+              { "title": "Fall 2017", "url": "/math_114_fall_2017/" },
+              { "title": "Spring 2017", "url": "/math_114_spring_2017/" },
+              { "title": "Fall 2016", "url": "/math_114_fall_2016/" }
+            ]
+          },
+          {
+            "title": "Math 240",
+            "url": "#",
+            "children": [
+              { "title": "Homepage (Spring 2019)", "url": "/math_240/" },
+              { "title": "Fall 2018", "url": "/math_240_fall_2018/" },
+              { "title": "Spring 2018", "url": "/math_240_spring_2018/" }
+            ]
+          },
+          { "title": "Testimonials", "url": "/testimonials/" },
+          { "title": "Coursework", "url": "/coursework/" }
+        ]
+      }
+    ]
+  }
+]

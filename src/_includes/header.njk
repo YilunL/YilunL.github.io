@@ -1,0 +1,44 @@
+<header id="header" {% if landing %}class="alt"{% endif %}>
+    <h1 id="logo">
+        <a href="/" class="logo">{{ site.siteName }}</a>
+    </h1>
+    <nav id="nav">
+        <ul>
+            {% for item in navigation %}
+            <li{% if item.children %} class="has-dropdown"{% endif %}>
+                <a href="{{ item.url }}">{{ item.title }}</a>
+                {% if item.children %}
+                <ul>
+                    {% for child in item.children %}
+                    <li{% if child.children %} class="has-dropdown"{% endif %}>
+                        <a href="{{ child.url }}">{{ child.title }}</a>
+                        {% if child.children %}
+                        <ul>
+                            {% for grandchild in child.children %}
+                            <li{% if grandchild.children %} class="has-dropdown"{% endif %}>
+                                <a href="{{ grandchild.url }}">{{ grandchild.title }}</a>
+                                {% if grandchild.children %}
+                                <ul>
+                                    {% for greatgrandchild in grandchild.children %}
+                                    <li>
+                                        <a href="{{ greatgrandchild.url }}">{{ greatgrandchild.title }}</a>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                                {% endif %}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <svg class="icon" width="24" height="24"><use href="#icon-menu"></use></svg>
+    </button>
+</header>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ description | default('Personal website of Ivan Li - Economics PhD candidate') }}">
+    
+    <title>{{ title }} - {{ site.siteName }}</title>
+    
+    <!-- Preconnect to external domains for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts with display=swap for better performance -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/assets/css/modern.css">
+    
+    <!-- Noscript fallback -->
+    <noscript>
+        <link rel="stylesheet" href="/assets/css/noscript.css">
+    </noscript>
+    
+    <!-- Google Analytics - async loading -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_id }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', '{{ site.ga_id }}');
+    </script>
+</head>
+
+<body class="{% if preload %}is-preload{% endif %}{% if landing %} landing{% endif %}">
+    {% include "icons.njk" %}
+    
+    <div id="page-wrapper">
+        {% include "header.njk" %}
+        
+        {{ content | safe }}
+        
+        {% include "footer.njk" %}
+    </div>
+
+    <!-- Scripts - defer non-critical JS -->
+    <script src="/assets/js/main.modern.js" defer></script>
+</body>
+</html>

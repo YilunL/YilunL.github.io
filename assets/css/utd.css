@@ -1,11 +1,28 @@
+/* Font Awesome - loaded via @import for backward compatibility */
 @import url("font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
+
+/* Note: Google Fonts should be loaded via <link> in HTML for better performance
+   The @import below is kept for backward compatibility */
+/* @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic"); */
 
 /*
 	Landed by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	
+	Modernized: 2025 - Added CSS custom properties, improved accessibility
 */
+
+/* CSS Custom Properties for easier theming */
+:root {
+	--color-primary: #FFB612;
+	--color-secondary: #006CB8;
+	--color-secondary-dark: #00548f;
+	--color-dark: #154734;
+	--color-text: #000000;
+	--color-white: #ffffff;
+	--transition-fast: 0.2s ease-in-out;
+}
 
 html,
 body,

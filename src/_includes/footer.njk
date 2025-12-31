@@ -1,0 +1,32 @@
+<footer id="footer">
+    <ul class="icons">
+        <li>
+            <a href="{{ site.social.twitter }}" class="icon" aria-label="Twitter">
+                <svg class="icon-svg" width="20" height="20"><use href="#icon-twitter"></use></svg>
+                <span class="label">Twitter</span>
+            </a>
+        </li>
+        <li>
+            <a href="{{ site.social.facebook }}" class="icon" aria-label="Facebook">
+                <svg class="icon-svg" width="20" height="20"><use href="#icon-facebook"></use></svg>
+                <span class="label">Facebook</span>
+            </a>
+        </li>
+        <li>
+            <a href="{{ site.social.linkedin }}" class="icon" aria-label="LinkedIn">
+                <svg class="icon-svg" width="20" height="20"><use href="#icon-linkedin"></use></svg>
+                <span class="label">LinkedIn</span>
+            </a>
+        </li>
+        <li>
+            <a href="mailto:{{ site.email }}" class="icon" aria-label="Email">
+                <svg class="icon-svg" width="20" height="20"><use href="#icon-envelope"></use></svg>
+                <span class="label">Email</span>
+            </a>
+        </li>
+    </ul>
+    <ul class="copyright">
+        {% if photoCredit %}<li>Photo Credits: {{ photoCredit }}</li>{% endif %}
+        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    </ul>
+</footer>
