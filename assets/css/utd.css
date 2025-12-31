@@ -4340,18 +4340,12 @@ a.piazza {
 	right: 1em;
 	font-size: 1.2em;
 	font-weight: 300;
-	transition: transform 0.2s ease;
 }
 
 #navPanel .link.has-children.is-expanded::after {
 	content: '−';
 }
 
-#navPanel .submenu-items {
-	display: none;
-	overflow: hidden;
-}
-
-#navPanel .submenu-items.is-visible {
-	display: block;
+#navPanel .upenn-child {
+	/* Hidden by default via jQuery .hide() */
 }

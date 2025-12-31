@@ -74,51 +74,55 @@
 		// Make UPenn submenu collapsible on mobile
 			(function() {
 				var $navPanel = $('#navPanel');
+				var $upennLink = null;
+				var $upennChildren = $();
 				
-				// Find the UPenn link and wrap its children
-				$navPanel.find('a.link').each(function() {
+				// Find all links in the nav panel
+				var $allLinks = $navPanel.find('a.link');
+				var foundUpenn = false;
+				var upennDepth = -1;
+				
+				$allLinks.each(function(index) {
 					var $link = $(this);
 					var linkText = $link.text().trim();
 					
-					// Check if this is the UPenn parent link
-					if (linkText === 'UPenn') {
-						$link.addClass('has-children');
-						
-						// Get current depth class
-						var currentDepth = 2; // UPenn is at depth-2 (inside Extra)
-						
-						// Find all following links until we hit same or lower depth
-						var $allFollowing = $link.nextAll('a.link');
-						var $children = $();
-						
-						$allFollowing.each(function() {
-							var $this = $(this);
-							// Check if this link is deeper than UPenn (depth > 2)
-							if ($this.hasClass('depth-3') || $this.hasClass('depth-4') || $this.hasClass('depth-5')) {
-								$children = $children.add($this);
-							} else {
-								// Stop when we hit same or lower depth
-								return false;
-							}
-						});
-						
-						// Wrap children in a container
-						if ($children.length > 0) {
-							$children.wrapAll('<div class="submenu-items upenn-submenu"></div>');
+					// Get the depth from the class
+					var depth = -1;
+					for (var i = 0; i <= 5; i++) {
+						if ($link.hasClass('depth-' + i)) {
+							depth = i;
+							break;
 						}
-						
-						// Toggle on click
-						$link.on('click', function(e) {
-							var href = $link.attr('href');
-							if (!href || href === '#' || href === '') {
-								e.preventDefault();
-								e.stopPropagation();
-								$link.toggleClass('is-expanded');
-								$link.next('.submenu-items').toggleClass('is-visible');
-							}
-						});
+					}
+					
+					if (linkText === 'UPenn') {
+						foundUpenn = true;
+						upennDepth = depth;
+						$upennLink = $link;
+						$link.addClass('has-children');
+					} else if (foundUpenn) {
+						// If we found UPenn, collect children until we hit same or lower depth
+						if (depth > upennDepth) {
+							$upennChildren = $upennChildren.add($link);
+						} else {
+							// Stop collecting - we've moved past UPenn's children
+							foundUpenn = false;
+						}
 					}
 				});
+				
+				// Hide children by default
+				$upennChildren.addClass('upenn-child').hide();
+				
+				// Toggle on click
+				if ($upennLink) {
+					$upennLink.on('click', function(e) {
+						e.preventDefault();
+						e.stopPropagation();
+						$upennLink.toggleClass('is-expanded');
+						$upennChildren.slideToggle(200);
+					});
+				}
 			})();
 
 	// Parallax.
